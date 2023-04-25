@@ -5,6 +5,7 @@ puts "What's your state?"
 state = gets.upcase!           # upcase for upper case, downcase for lower case
 puts "What's your age?"
 age = Integer(gets.chomp)
+puts "Your name is #{name}\nYour state is #{state}\nYour age is #{age}."
 print "Thank you!"   # Does not go to a new line after print
 
 # if/else statement and comparators
@@ -18,4 +19,13 @@ elsif 30 > age && age >= 20
   print "You're a young adult."
 else
   print "You're an elder person."
+end
+
+
+# unless statement
+employment = false
+unless employment
+  print "You're unemployed"
+else
+  print "You're employed"
 end
