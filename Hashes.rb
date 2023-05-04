@@ -1,4 +1,4 @@
-pets = Hash.new         # my_hash = Hash.new is the same as the my_hash = {}
+pets = Hash.new         # my_hash = Hash.new() is the same as the my_hash = {}
 pets["Dogs"] = "Brownie"
 print pets
 
