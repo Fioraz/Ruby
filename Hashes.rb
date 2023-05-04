@@ -15,3 +15,16 @@ family = { "Homer" => "dad",
   }
   
   family.each { |x, y| puts "#{x}: #{y}" }
+
+
+
+
+
+puts "Enter a phrase you'd like to analyze: "
+text = gets.chomp
+
+words = text.split
+
+frequencies = Hash.new(0)
+
+puts words.each { |word| frequencies[word] += 1 }
