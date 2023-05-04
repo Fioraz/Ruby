@@ -1,4 +1,6 @@
-pets = Hash.new         # my_hash = Hash.new() is the same as the my_hash = {}
+frequencies = Hash.new(0)   # returns {} as there's no values
+
+pets = Hash.new         # my_hash = Hash.new is the same as the my_hash = {}
 pets["Dogs"] = "Brownie"
 print pets
 
