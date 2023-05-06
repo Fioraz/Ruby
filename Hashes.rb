@@ -19,7 +19,7 @@ family = { "Homer" => "dad",
 
 
 
-
+# similar words counter
 puts "Enter a phrase you'd like to analyze: "
 text = gets.chomp
 
