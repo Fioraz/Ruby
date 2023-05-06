@@ -13,4 +13,8 @@ end
 
 # Reverse the order (ex: ascending to descending)
 frequencies.reverse!
-puts frequencies
+
+# Print the word, a space, and the word count (ex: abcd 3)
+frequencies.each do |word, count|
+    puts word + " " + count.to_s
+  end
