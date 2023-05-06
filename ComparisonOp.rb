@@ -16,8 +16,11 @@ book_1 <=> book_2
 books = ["Charlie and the Chocolate Factory", "War and Peace", "Utopia", "A Brief History of Time", "A Wrinkle in Time"]
 
 # To sort our books in ascending order, in-place
+# Use 2 variable names (firstBook, secondBook) 
+#Then use the combined comparison operator between variable 1 & variable 2 for ascending order
 books.sort! { |firstBook, secondBook| firstBook <=> secondBook }
 
 # Sort your books in descending order, in-place below
-
+# Use 2 variable names (firstBook, secondBook) 
+# Then use the combined comparison operator between variable 2 & variable 1 for descending order
 books.sort! { |firstBook, secondBook| secondBook <=> firstBook }
