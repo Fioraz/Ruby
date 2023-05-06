@@ -24,3 +24,20 @@ books.sort! { |firstBook, secondBook| firstBook <=> secondBook }
 # Use 2 variable names (firstBook, secondBook) 
 # Then use the combined comparison operator between variable 2 & variable 1 for descending order
 books.sort! { |firstBook, secondBook| secondBook <=> firstBook }
+
+
+
+
+
+def alphabetize(arr, rev=false)
+    if rev
+      arr.sort { |item1, item2| item2 <=> item1 }
+    else
+      arr.sort { |item1, item2| item1 <=> item2 }
+    end
+  end
+  
+  books = ["Heart of Darkness", "Code Complete", "The Lorax", "The Prophet", "Absalom, Absalom!"]
+  
+  puts "A-Z: #{alphabetize(books)}"
+  puts "Z-A: #{alphabetize(books, true)}"
