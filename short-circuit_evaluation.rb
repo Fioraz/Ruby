@@ -11,3 +11,13 @@ def a
   puts a || b
   puts "------"
   puts a && b
+
+
+#Output given below
+
+# A was evaluated!
+# true
+# ------
+# A was evaluated!
+# B was also evaluated!
+# true
