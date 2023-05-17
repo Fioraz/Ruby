@@ -27,16 +27,16 @@ def number_format(n)
     end
     if n_string != "" && sign == "+"
       n_string = n.to_s + "," + n_string
-      puts n_string
+      return n_string
     elsif n_string == "" && sign == "-"
       n_string = "-" + n.to_s
-      puts n_string
+      return n_string
     elsif n_string == "" && sign == "+"
       n_string = n.to_s
-      puts n_string
+      return n_string
     else
       n_string = "-" + n.to_s + "," + n_string
-      puts n_string
+      return n_string
     end
   end
   
